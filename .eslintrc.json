@@ -1,0 +1,83 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 9
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "strict": [
+      "error",
+      "safe"
+    ],
+    "no-unused-vars": [
+      "error",
+      { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "public/**/*.js"
+      ],
+      "env": {
+        "node": false,
+        "browser": true,
+        "es6": false,
+        "jquery": true
+      },
+      "parserOptions": {
+        "ecmaVersion": 5
+      },
+      "rules": {
+        "quotes": [
+          "error",
+          "single",
+          {
+            "allowTemplateLiterals": false
+          }
+        ]
+      },
+      "globals": {
+        "angular": "readonly",
+        "require": "readonly",
+        "monaco": "readonly",
+        "_": "readonly",
+        "moment": "readonly",
+        "CodeMirror": "readonly",
+        "agGrid": "readonly",
+        "CSV": "readonly",
+        "Papa": "readonly",
+        "passwordStrength": "readonly",
+        "pluralize": "readonly",
+        "later": "readonly",
+        "numbro": "readonly",
+        "URITemplate": "readonly",
+        "URI": "readonly",
+        "nes": "readonly",
+        "apiCheck": "readonly",
+        "angularDragula": "readonly",
+        "Highcharts": "readonly",
+        "AggBuilder": "readonly",
+        "Promise": "readonly"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "i5-white-label",
+  "version": "1.0.0",
+  "description": "An Informer 5 plugin to white label with a custom logo, application title, and favicon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entrinsik-org/i5-white-label.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/entrinsik-org/i5-white-label/issues"
+  },
+  "homepage": "https://github.com/entrinsik-org/i5-white-label#readme"
+}
