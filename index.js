@@ -44,6 +44,17 @@ exports.register = function (server, opts, next) {
         }
     });
 
+    server.route({
+        path: '/images/favicon.svg',
+        method: 'get',
+        config: {
+            auth: false,
+            handler: {
+                file: path.resolve(__dirname, 'public/images/favicon.ico')
+            }
+        }
+    });
+
     next();
 };
 
