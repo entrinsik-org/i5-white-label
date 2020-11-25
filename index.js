@@ -45,7 +45,7 @@ exports.register = function (server, opts, next) {
     });
 
     server.route({
-        path: '/images/favicon.svg',
+        path: '/images/favicon/favicon.ico',
         method: 'get',
         config: {
             auth: false,
