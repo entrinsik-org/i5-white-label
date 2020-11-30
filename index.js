@@ -44,13 +44,19 @@ exports.register = function (server, opts, next) {
         }
     });
 
+    //Override Informer's favicon directory
+    // Use https://realfavicongenerator.net/ to create a favicon directory with your logo
     server.route({
-        path: '/images/favicon/favicon.ico',
-        method: 'get',
+        method: 'GET',
+        path: '/images/favicon/{path*}',
         config: {
             auth: false,
             handler: {
-                file: path.resolve(__dirname, 'public/images/favicon.ico')
+                directory: {
+                    path: path.resolve(__dirname, './public/images/favicon'),
+                    listing: false,
+                    index: false
+                }
             }
         }
     });
