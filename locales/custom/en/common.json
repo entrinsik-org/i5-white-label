@@ -1,0 +1,9 @@
+{
+  "entrinsik": "ACME",
+  "informer": "Reporting",
+  "entrinsik_informer": "ACME Reporting",
+  "informer4": "Legacy Reporting",
+  "informer5": "Reporting 5",
+  "entrinsik_informer_version": "ACME Reporting v{{ version }}",
+  "informer_version": "Reporting v{{version}}"
+}

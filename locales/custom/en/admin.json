@@ -1,0 +1,8 @@
+{
+  "states": {
+    "settings": "Application setings",
+    "settings_description": "Manage various system-wide options",
+    "tenants": "Child installations",
+    "tenants_description": "View and manage child installations"
+  }
+}
