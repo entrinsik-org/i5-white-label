@@ -11,7 +11,7 @@ A plugin for Informer 5 that replaces various visual aspects of Informer
 Clients wanting to override (partially or wholly) any part of the core or plugin-added namespaces,
 or even want to introduce entirely new languages for their ENTIRE DEPLOYMENT can do so one of two ways:
     
-1. For native environments, define a 'customLocalesDir' in config.json under i18n:
+1. For native environments, define a custom 'localesDir' in config.json under i18n:
    <pre>
         {
             "i18n": {
