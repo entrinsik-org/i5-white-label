@@ -2,11 +2,11 @@
     'use strict';
 
     angular.module('informer')
-        .config(function (appTitle, navProvider) {
+        .config(function (navProvider) {
             $('body').addClass('white-label');
 
         })
-        .run(function ($rootScope, logLevels, appTitle) {
+        .run(function ($rootScope, logLevels) {
             $rootScope.hideHelp = true;
             $rootScope.whiteLabel = true;
         });
